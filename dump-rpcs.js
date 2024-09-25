@@ -3,7 +3,8 @@ const path = require('path');
 const { execSync } = require('child_process');
 
 function dumpAndExtractRPCFunctions() {
-  const supabasePath = path.join(process.cwd(), 'packages', 'app', 'supabase');
+  // UPDATE YOUR SUPABASE FOLDER PATH HERE
+  const supabasePath = 'YOUR SUPABASE FOLDER PATH HERE';
   const sqlFilePath = path.join(supabasePath, 'schema.sql');
   const outputDirectory = path.join(supabasePath, 'rpc');
 
